@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="first_pcl" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/first_pcl" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/first_pcl" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++14" />
+			<Add option="-fexceptions" />
+			<Add directory="/usr/include/vtk-5.8" />
+			<Add directory="/usr/include/eigen3" />
+			<Add directory="/usr/include/pcl-1.7" />
+		</Compiler>
+		<Linker>
+			<Add option="-lboost_system" />
+			<Add option="-lGL" />
+			<Add option="-lGLU" />
+			<Add option="-pthread" />
+			<Add library="/usr/lib/libvtkalglib.so" />
+			<Add library="/usr/lib/libvtkCharts.so" />
+			<Add library="/usr/lib/libvtkCommon.so" />
+			<Add library="/usr/lib/libvtkDICOMParser.so" />
+			<Add library="/usr/lib/libvtkexoIIc.so" />
+			<Add library="/usr/lib/libvtkFiltering.so" />
+			<Add library="/usr/lib/libvtkftgl.so" />
+			<Add library="/usr/lib/libvtkGenericFiltering.so" />
+			<Add library="/usr/lib/libvtkGeovis.so" />
+			<Add library="/usr/lib/libvtkGraphics.so" />
+			<Add library="/usr/lib/libvtkHybrid.so" />
+			<Add library="/usr/lib/libvtkImaging.so" />
+			<Add library="/usr/lib/libvtkInfovis.so" />
+			<Add library="/usr/lib/libvtkIO.so" />
+			<Add library="/usr/lib/libvtkmetaio.so" />
+			<Add library="/usr/lib/libvtkParallel.so" />
+			<Add library="/usr/lib/libvtkproj4.so" />
+			<Add library="/usr/lib/libvtkRendering.so" />
+			<Add library="/usr/lib/libvtksys.so" />
+			<Add library="/usr/lib/libvtkverdict.so" />
+			<Add library="/usr/lib/libvtkViews.so" />
+			<Add library="/usr/lib/libvtkVolumeRendering.so" />
+			<Add library="/usr/lib/libvtkWidgets.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libGLEW.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libglfw.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_common.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_features.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_filters.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_io.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_io_ply.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_keypoints.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_octree.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_outofcore.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_people.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_recognition.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_registration.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_search.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_surface.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_tracking.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libpcl_visualization.so" />
+		</Linker>
+		<Unit filename="Camera.hpp" />
+		<Unit filename="Shader.hpp" />
+		<Unit filename="VeryNaiveSphere.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
